@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+body{
+    background-image: url(../img/scoob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+    font-size: 3.2rem;  
+    
+    margin-bottom:10px;
+    
+    color: #d11cb6;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+}
+
+.game {
+    color: #fff;
+    background: 
+    linear-gradient(152.97deg,  rgba(255, 255, 255, 0.2) 0%,
+                                rgba(204, 54, 130, 0.5) 100%);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+
+    width: 350px;
+    height: 350px;
+
+
+    border-radius: 10px;
+
+    display:grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    
+    
+}
+
+.game > div {
+    border: 3px solid #cc3682;
+    border-radius: 2px;
+ 
+    font-family: 'Bangers', cursive;
+    font-size: 4em; 
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-restart {
+    color:#00ff4c;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0);
+    
+    font-family: 'Bangers', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0 .5rem;
+    margin-top: 3.5rem;
+
+    border-radius: 0.5rem;
+
+    background: 
+    linear-gradient(152.97deg,  rgba(255, 255, 255, 0.2) 0%,
+                                rgba(204, 54, 130, 0.5) 100%);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+    transition: .2s ease-in-out;
+}
+
+.btn-restart:hover {
+    color:#ffffff;
+
+    background: 
+    linear-gradient(120deg,  rgba(255, 0, 170, 0.9) 0%,
+                                rgba(0, 0, 0, 0.9) 100%);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9);
+}
